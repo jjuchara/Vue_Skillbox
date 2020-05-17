@@ -1,5 +1,5 @@
 <template>
-    <ProductList :products="products"/>
+    <ProductList :products="products" :paginations="paginations"/>
 </template>
 <script>
     import products from "./data/products";
@@ -10,7 +10,8 @@
         components: {ProductList},
         data() {
             return {
-                products
+                products,
+                paginations: [1,2,3,4,5,6,7,8,9,10]
             }
         }
     }
